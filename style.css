@@ -150,7 +150,7 @@ span{
 
 
 
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 500px) {
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar */
     }
@@ -233,5 +233,9 @@ span{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
     }
 }
