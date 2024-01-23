@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    position: relative;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background: rgb(51, 51, 51);
+    transition: 1s;
+    z-index: 1;
+}
+.nav-link, .nav-link:active {
+    color: white !important;
+}
+
+
+.navbar.scrolled {
+    justify-content: flex-end;
+    padding-right: 100px;
+    opacity: 1;
+    background: white;
+    z-index: 1;
+}
+
+
+.nav-link.scrolled, .nav-link:active{
+    color: black !important;
+}
+
+
+
+
+.home {
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+}
+
+
+h1 {
+    justify-content: center;
+    display: flex;
+    font-family: 'Poppins', 'sans-serfis';
+    font-weight: 800;
+    font-size: 50px;
+    height: 60px;
+    width: 550px;
+}
+p{
+    display: block;
+    justify-content: center;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 100px
+}
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    height: 1vh;
+    font-size: 2rem;
+    
+}
+
+.bi-facebook, 
+.bi-linkedin, 
+.bi-github {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.bi-facebook:hover, 
+.bi-linkedin:hover, 
+.bi-github:hover {
+    transform: scale(1.1)
+}
+
+span{
+    font-weight: bold;
+    white-space: normal;
+}
+
+.about {
+    padding: 15rem 0;
+    background: rgba(51, 51, 51, 0.1);
+}
+.projects {
+    padding: 15rem 0;
+    
+}
+.contacts {
+    padding: 15rem 0;
+    background: rgba(51, 51, 51, 0.1);
+}
+.skillicons{
+    height: 5rem;
+    width: 5rem;
+    padding-left: 10px;
+}
+.spanskills {
+    border-right: 2px solid rgba(45,46,50,.5);
+    margin-right: 2rem;
+    padding-right: 2rem;
+    font-weight: 800;
+    font-size: large;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+#typingEffect {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 800;
+    font-size: 50px;
+    height: 60px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width: 500px) {
+    ::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar */
+    }
+    .container{
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .icon {
+        justify-content: center;
+    }
+    .home {
+        padding-top: 10px ;
+        align-items: center;
+    }
+    .x {
+        width: 20rem;
+        height: 19rem;
+        object-fit: cover;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    h1 {
+        color: #2d2e32;
+        line-height: 1.2;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 800;
+        padding-top: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+    p {
+        text-align: center;
+        
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .spanskills {
+        border-bottom: 2px solid rgba(45,46,50,.5);
+        border-right: none;
+        text-align: center;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .skillicons{
+        height: 7rem;
+        width: 7rem;
+        padding-right: 10px;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar.scrolled {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        opacity: 1;
+        background: rgb(51, 51, 51);
+        z-index: 1;
+    }
+    .nav-link.scrolled {
+        color: white !important;
+        
+    }
+    #typingEffect {
+        font-family: 'Poppins', 'sans-serif';
+        font-weight: 800;
+        font-size: 30px;
+        height: 60px;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
